@@ -11,8 +11,8 @@ RUN chmod +x /usr/local/bin/frp/amd64/frpc /usr/local/bin/frp/amd64/frps
 RUN chmod +x /usr/local/bin/frp/arm64/frpc /usr/local/bin/frp/arm64/frps
 
 # 复制启动脚本
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY init.sh /init.sh
+RUN chmod +x /init.sh
 
 # 创建配置文件目录
 RUN mkdir -p /etc/frp
@@ -26,4 +26,4 @@ WORKDIR /etc/frp
 EXPOSE 7000 7500
 
 # 设置启动脚本
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["/init.sh"]

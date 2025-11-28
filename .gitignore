@@ -1,7 +1,7 @@
-frp/amd64
-frp/arm64
-!frp/arm64/.gitkeep
-!frp/amd64/.gitkeep
+docker_builder/frp/amd64/*
+docker_builder/frp/arm64/*
+!docker_builder/frp/arm64/.gitkeep
+!docker_builder/frp/amd64/.gitkeep
 
 frp*.tar
 frp*.tar.gz
