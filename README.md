@@ -4,7 +4,7 @@
 导入镜像：
 
 ```bash
-# docker load -o prebuild/frp-0.65.0.tar
+# docker load -o frp-0.65.0.tar
 # docker images -a
 REPOSITORY    TAG       IMAGE ID       CREATED         SIZE
 frp          0.65.0   983b02d2f8d6   17 hours ago    81.3MB
@@ -39,7 +39,7 @@ docker run -d \
   --name frps \
   --network host \
   --restart=always \
-  -e MODE=frpc \
+  -e MODE=frps \
   -e ARCH=amd64 \
   -v /home/root/frp/frps.toml:/etc/frp/frps.toml \
   frp:0.65.0
