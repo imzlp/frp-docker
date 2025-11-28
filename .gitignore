@@ -1,0 +1,7 @@
+frp/amd64
+frp/arm64
+!frp/arm64/.gitkeep
+!frp/amd64/.gitkeep
+
+frp*.tar
+frp*.tar.gz
